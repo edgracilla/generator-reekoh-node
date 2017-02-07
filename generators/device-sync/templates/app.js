@@ -1,5 +1,6 @@
 'use strict'
 
+const config = require('./config.js')
 const reekoh = require('demo-reekoh-node')
 const _plugin = new reekoh.plugins.DeviceSync()
 
@@ -10,6 +11,10 @@ const _plugin = new reekoh.plugins.DeviceSync()
  * The plugin should listen once and execute its init process.
  */
 _plugin.once('ready', () => {
+
+	let err = config.validate(_plugin.config)
+  if (err) return console.error('Config Validation Error: \n', err)
+
 	// TODO: Initialize your client or subscribe to the 3rd party service here.
 
 	/*
