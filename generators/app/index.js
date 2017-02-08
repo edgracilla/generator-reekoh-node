@@ -54,6 +54,16 @@ module.exports = class extends Generator {
             { fromRoot: true}, { local: require.resolve('../storage')})
           break
 
+        case 'Logger':
+          self.composeWith(`${APP_NAME}:logger`,
+            { fromRoot: true}, { local: require.resolve('../logger')})
+          break
+
+        case 'Exception Logger':
+          self.composeWith(`${APP_NAME}:exception-logger`,
+            { fromRoot: true}, { local: require.resolve('../exception-logger')})
+          break
+
         default:
           console.log('Cant find the sub-generator for the selected plugin seed.')
       }
