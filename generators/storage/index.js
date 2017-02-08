@@ -15,7 +15,7 @@ module.exports = class extends Generator {
     }
   }
 
-  writing (a, b, c) {
+  writing () {
     let self = this
     //
     async.waterfall([
