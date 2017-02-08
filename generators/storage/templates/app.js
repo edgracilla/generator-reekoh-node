@@ -21,7 +21,7 @@ _plugin.on('data', (data) => {
 _plugin.once('ready', () => {
 
 	let err = config.validate(_plugin.config)
-  if (err) return console.error('Config Validation Error: \n', err)
+	if (err) return console.error('Config Validation Error: \n', err)
   	
 	// TODO: Initialize the connection to your database here.
   console.log('Storage has been initialized.')

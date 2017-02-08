@@ -12,7 +12,7 @@ const _plugin = new reekoh.plugins.Gateway()
 _plugin.once('ready', () => {
 
 	let err = config.validate(_plugin.config)
-  if (err) return console.error('Config Validation Error: \n', err)
+	if (err) return console.error('Config Validation Error: \n', err)
   	
 	// TODO: Initialize your gateway/server here.
 

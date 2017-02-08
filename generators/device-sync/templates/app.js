@@ -13,7 +13,7 @@ const _plugin = new reekoh.plugins.DeviceSync()
 _plugin.once('ready', () => {
 
 	let err = config.validate(_plugin.config)
-  if (err) return console.error('Config Validation Error: \n', err)
+	if (err) return console.error('Config Validation Error: \n', err)
 
 	// TODO: Initialize your client or subscribe to the 3rd party service here.
 
