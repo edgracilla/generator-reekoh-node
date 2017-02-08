@@ -17,7 +17,7 @@ module.exports = class extends Generator {
 
   writing () {
     let self = this
-    //
+    
     async.waterfall([
       (done) => {
         self.fs.copy(
