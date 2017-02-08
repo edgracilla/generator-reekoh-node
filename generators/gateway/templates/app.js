@@ -1,5 +1,6 @@
 'use strict'
 
+const config = require('./config.js')
 const reekoh = require('demo-reekoh-node')
 const _plugin = new reekoh.plugins.Gateway()
 
@@ -9,6 +10,10 @@ const _plugin = new reekoh.plugins.Gateway()
  * Emitted when the platform bootstraps the plugin. The plugin should listen once and execute its init process. 
  */
 _plugin.once('ready', () => {
+
+	let err = config.validate(_plugin.config)
+	if (err) return console.error('Config Validation Error: \n', err)
+  	
 	// TODO: Initialize your gateway/server here.
 
 	/*
