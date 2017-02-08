@@ -1,0 +1,14 @@
+{
+  "name": "connector-plugin-seed",
+  "version": "1.0.0",
+  "description": "Connector plugin seed",
+  "main": "app.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "author": "reekoh",
+  "license": "ISC",
+  "dependencies": {
+    "demo-reekoh-node": "^1.0.0"
+  }
+}
