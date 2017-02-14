@@ -1,7 +1,7 @@
 'use strict'
 
 const config = require('./config.js')
-const reekoh = require('demo-reekoh-node')
+const reekoh = require('reekoh-node')
 const _plugin = new reekoh.plugins.Storage()
 
 /**
