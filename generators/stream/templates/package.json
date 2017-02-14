@@ -9,6 +9,6 @@
   "author": "reekoh",
   "license": "ISC",
   "dependencies": {
-    "demo-reekoh-node": "^1.0.0"
+    "reekoh-node": "^1.0.0"
   }
 }
