@@ -7,7 +7,7 @@
     "test": "gulp test"
   },
   "author": "reekoh",
-  "license": "ISC",
+  "license": "GPL 3.0",
   "dependencies": {
     "reekoh-node": "^1.0.0"
   }

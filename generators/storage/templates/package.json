@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Storage plugin seed",
   "author": "Reekoh, Inc.",
-  "license": "LGPL-3.0",
+  "license": "GPL 3.0",
   "main": "app.js",
   "scripts": {
     "test": "gulp test"
