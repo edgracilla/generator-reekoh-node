@@ -48,5 +48,5 @@
     "prepublish": "gulp prepublish",
     "test": "gulp"
   },
-  "license": "GPL 3.0"
+  "license": "ISC"
 }
