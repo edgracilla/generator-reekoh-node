@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Gateway plugin seed",
   "author": "Reekoh, Inc.",
-  "license": "LGPL-3.0",
+  "license": "GPL-3.0",
   "main": "app.js",
   "scripts": {
     "test": "gulp test"
@@ -13,7 +13,7 @@
     "url": "https://github.com/"
   },
   "dependencies": {
-    "demo-reekoh-node": "^1.0.0",
+    "reekoh-node": "^1.0.0",
     "validate.js": "^0.11.1"
   },
   "devDependencies": {
