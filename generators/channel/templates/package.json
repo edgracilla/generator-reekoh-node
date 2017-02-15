@@ -3,7 +3,7 @@
   "description": "Channel plugin seed",
   "version": "1.0.0",
   "author": "Reekoh, Inc.",
-  "license": "GPL 3.0",
+  "license": "GPL-3.0",
   "main": "app.js",
   "scripts": {
     "test": "gulp test"
