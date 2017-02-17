@@ -1,7 +1,7 @@
 {
-  "name": "generator-demo-reekoh",
+  "name": "generator-reekoh-node",
   "version": "0.0.0",
-  "description": "Demo yoeman generator for plugins",
+  "description": "Yeoman generator for plugins",
   "homepage": "",
   "author": {
     "name": "reekoh",
@@ -48,5 +48,5 @@
     "prepublish": "gulp prepublish",
     "test": "gulp"
   },
-  "license": "ISC"
+  "license": "GPL 3.0"
 }

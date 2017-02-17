@@ -1,7 +1,8 @@
 'use strict'
 
-let reekoh = require('demo-reekoh-node')
-let _plugin = new reekoh.plugins.Logger()
+const config = require('./config.js')
+const reekoh = require('reekoh-node')
+const _plugin = new reekoh.plugins.Logger()
 // let connection
 
 /**
@@ -19,6 +20,13 @@ _plugin.on('log', (logData) => {
  * The plugin should listen once and execute its init process.
  */
 _plugin.once('ready', () => {
+
+  let err = config.validate(_plugin.config)
+
+  if (err) {
+    return console.error('Config Validation Error: \n', err)
+  }
+
   /**
    * var connectionString = options.connstring;
    * connection = loggingService.connect(connectionString);

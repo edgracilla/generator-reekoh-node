@@ -15,7 +15,7 @@ module.exports = class extends Generator {
     }
   }
 
-  writing (a, b, c) {
+  writing () {
     let self = this
 
     async.waterfall([
@@ -35,6 +35,8 @@ module.exports = class extends Generator {
         self.fs.copy(
           self.templatePath('.travis.yml'),
           self.destinationPath('.travis.yml'))
+
+        done()
       }
     ], (err) => {
       if (err) return console.log(err)
