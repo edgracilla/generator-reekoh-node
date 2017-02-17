@@ -9,7 +9,7 @@
   "author": "reekoh",
   "license": "GPL 3.0",
   "dependencies": {
-    "reekoh-node": "^1.0.0",
+    "reekoh": "^1.0.1",
     "validate.js": "^0.11.1"
   },
   "devDependencies": {
