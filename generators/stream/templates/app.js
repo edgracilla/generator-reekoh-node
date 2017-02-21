@@ -48,11 +48,11 @@ _plugin.on('message', function (message) {
  */
 _plugin.once('ready', () => {
   /*
-   * Initialize your stream using the _plugin.config. See config.js
-   * You can customize config.js based on the needs of your plugin.
+   * Initialize your stream using the _plugin.config. See config.json
+   * You can customize config.json based on the needs of your plugin.
    * Reekoh will inject these configuration parameters as _plugin.config when the platform bootstraps the plugin.
    *
-   * Note: Config Names are based on what you specify on the config.js.
+   * Note: Config Names are based on what you specify on the config.json.
    */
 
   // TODO: Initialize your client or subscribe to the 3rd party service here.
