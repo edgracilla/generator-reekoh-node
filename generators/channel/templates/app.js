@@ -1,7 +1,6 @@
 'use strict'
 
-const config = require('./config.js')
-const reekoh = require('reekoh-node')
+const reekoh = require('reekoh')
 const _plugin = new reekoh.plugins.Channel()
 
 // let server, socket;
@@ -21,9 +20,6 @@ _plugin.on('data', (data) => {
  * The plugin should listen once and execute its init process.
  */
 _plugin.once('ready', () => {
-
-	let err = config.validate(_plugin.config)
-	if (err) return console.error('Config Validation Error: \n', err)
 
 	// TODO: Initialize your channel server here. Channels should be able to send outbound data and also receive incoming requests.
 

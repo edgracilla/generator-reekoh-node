@@ -1,7 +1,6 @@
 'use strict'
 
-const config = require('./config.js')
-const reekoh = require('reekoh-node')
+const reekoh = require('reekoh')
 const _plugin = new reekoh.plugins.Storage()
 
 /**
@@ -19,9 +18,6 @@ _plugin.on('data', (data) => {
  * The plugin should listen once and execute its init process.  
  */
 _plugin.once('ready', () => {
-
-	let err = config.validate(_plugin.config)
-	if (err) return console.error('Config Validation Error: \n', err)
   	
 	// TODO: Initialize the connection to your database here.
   console.log('Storage has been initialized.')
