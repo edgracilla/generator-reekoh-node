@@ -13,7 +13,7 @@
     "url": "https://github.com/"
   },
   "dependencies": {
-    "reekoh-node": "^1.0.0",
+    "reekoh": "^1.0.0",
     "validate.js": "^0.11.1"
   },
   "devDependencies": {
