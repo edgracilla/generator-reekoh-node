@@ -9,7 +9,7 @@ ADD . /home
 RUN npm install
 
 # setting need environment variables
-ENV PLUGIN_ID="demo.device-sync" \
+ENV PLUGIN_ID="demo.inventory-sync" \
     CONFIG="{}" \
     LOGGERS="" \
     EXCEPTION_LOGGERS="" \
