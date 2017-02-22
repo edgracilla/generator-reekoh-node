@@ -18,8 +18,8 @@ _plugin.on('data', (data) => {
  */
 _plugin.once('ready', () => {
   /*
-   *  Initialize the connection using the _plugin.config. See config.js
-   *  You can customize config.js based on the needs of your plugin.
+   *  Initialize the connection using the _plugin.config. See config.json
+   *  You can customize config.json based on the needs of your plugin.
    *  Reekoh will inject these configuration parameters as _plugin.config when the platform bootstraps the plugin.
    *
    *  Example:
@@ -27,7 +27,7 @@ _plugin.once('ready', () => {
    *  let connectionString = _plugin.config.connstring
    *  connection = service.connect(connectionString)
    *
-   *  Note: Config Names are based on what you specify on the config.js.
+   *  Note: Config Names are based on what you specify on the config.json.
    */
   console.log(_plugin.config)
   _plugin.log('Connector has been initialized.')
