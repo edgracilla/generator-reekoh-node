@@ -1,16 +1,8 @@
 {
-  "token": {
-    "label": "Token",
-    "type": "Password",
-    "required": true,
-    "help": "Specify your LogEntries token."
-  },
-  "log_level": {
-    "label": "Log Level",
+  "connectionString": {
+    "label": "Connection String",
     "type": "String",
-    "required": false,
-    "enum": ["debug", "info", "notice", "warning", "err", "crit", "alert", "emerg"],
-    "default": "debug",
-    "help": "(Optional) Specify the default log level for logs."
+    "required": true,
+    "help": "This is the help text for Connection String."
   }
 }
