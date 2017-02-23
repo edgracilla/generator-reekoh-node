@@ -3,7 +3,8 @@
 const reekoh = require('reekoh')
 const plugin = new reekoh.plugins.Channel()
 
-// let server, socket;
+// let server = null
+// let socket = null
 
 /**
  * Emitted when device data is received.

@@ -3,7 +3,7 @@
 const reekoh = require('reekoh')
 const plugin = new reekoh.plugins.InventorySync()
 
-// var client;
+// let client = null
 
 /**
  * Emitted when the platform bootstraps the plugin.
@@ -13,14 +13,15 @@ plugin.once('ready', () => {
 
 	// TODO: Initialize your client or subscribe to the 3rd party service here.
 
-	/*
-	 * Sample Code
+	/**
+	 * Example:
 	 *
-	 * var service = require('service');
+	 * var service = require('service')
 	 *
-	 * service.connect(options, function (error, serviceClient) {
-	 * 	client = serviceClient;
-	 * });
+	 * service.connect(options, (error, serviceClient) => {
+	 * 	client = serviceClient
+	 * })
+	 *
 	 */
 
   plugin.log('Inventory sync has been initialized.')
@@ -31,14 +32,18 @@ plugin.once('ready', () => {
  * This event will be received by the plugin based on the schedule/interval set by the user on the Plugin Configuration.
  */
 plugin.on('sync', () => {
+
 	// TODO: Fetch updates from service
 
-	/* Sample Code:
-	 *    client.fetchData(function (error, dataCollection) {
-	 *        dataCollection.forEach(function (data) {
-	 *            plugin.syncDevice(data);
-	 *        });
-	 *    });
+	/**
+	 * Example:
+	 *
+	 * client.fetchData((error, dataCollection) => {
+	 *   dataCollection.forEach((data) => {
+	 *     plugin.syncDevice(data)
+	 *   })
+	 * })
+	 *
 	 */
 })
 
@@ -47,12 +52,16 @@ plugin.on('sync', () => {
  * @param device {Object} - The device details.
  */
 plugin.on('adddevice', (device) => {
+
 	// TODO: Add device to 3rd party service
 
-	/* Sample Code:
-	 * client.addDevice(device, function() {
-	 *   console.log('New device added');
-	 * });
+	/**
+	 * Example:
+	 *
+	 * client.addDevice(device, () => {
+	 *   console.log('New device added')
+	 * })
+	 *
 	 */
 
 })
@@ -62,13 +71,18 @@ plugin.on('adddevice', (device) => {
  * @param device {Object} - The device details.
  */
 plugin.on('updatedevice', (device) => {
+
 	// TODO: Update device from 3rd party service
 
-	/*  Sample Code:
-	 * client.updateDevice(device, function() {
-	 *   console.log(`${device.name} has been updated`);
-	 * });
+	/**
+	 * Example:
+	 *
+	 * client.updateDevice(device, () => {
+	 *   console.log(`${device.name} has been updated`)
+	 * })
+	 *
 	 */
+
 })
 
 /**
@@ -76,12 +90,16 @@ plugin.on('updatedevice', (device) => {
  * @param device {Object} - The device details.
  */
 plugin.on('removedevice', (device) => {
+
 	// TODO: Remove device from 3rd party service
 
-	/* Sample Code:
-	 * client.removeDevice(device._id, function() {
-	 *   console.log(`${device.name} has been removed`);
-	 * });
+	/**
+	 * Example:
+	 *
+	 * client.removeDevice(device._id, () => {
+	 *   console.log(`${device.name} has been removed`)
+	 * })
+	 *
 	 */
 })
 
