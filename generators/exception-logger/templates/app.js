@@ -2,6 +2,7 @@
 
 const reekoh = require('reekoh')
 const _plugin = new reekoh.plugins.ExceptionLogger()
+
 // let connectionString
 
 /**
@@ -28,7 +29,7 @@ _plugin.once('ready', () => {
    *
    * Example:
    *
-   * var connectionString = options.connstring
+   * var connectionString = _plugin.config.connString
    *
    *
    *  Note: Config Names are based on what you specify on the config.json.
@@ -36,4 +37,7 @@ _plugin.once('ready', () => {
 
   // TODO: Initialize the connection to the error/bug tracking service here.
   _plugin.log('Exception Logger has been initialized.')
+  _plugin.emit('init')
 })
+
+module.exports = _plugin
