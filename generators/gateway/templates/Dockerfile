@@ -13,6 +13,8 @@ RUN npm install
 # setting need environment variables
 ENV PLUGIN_ID="demo.gateway" \
     PIPELINE="demo.gateway.pipeline" \
+    COMMAND_RELAYS="demo.relay1,demo.relay2" \
+    OUTPUT_PIPES="demo.outpipe1,demo.outpipe2" \
     PORT="8080" \
     KEY="" \
     CERT="" \

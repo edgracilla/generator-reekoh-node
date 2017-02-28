@@ -80,7 +80,7 @@ describe('<Plugin Name> Gateway', () => {
   })
 
   describe('#command', function () {
-    it('should receive command from gateway plugin', function (done) {
+    it('should be able to send command to device', function (done) {
       this.timeout(10000)
 
       // TODO: 
