@@ -17,7 +17,7 @@ let _app = null
 
 describe('<Plugin Name> Storage', () => {
   
-  before('init', function () => {
+  before('init', function () {
     // TODO: initialize all needed pre-test requirements i.e. process.env variables or connecting to some required services (e.g. rabbitmq)
 
     /**
@@ -60,7 +60,7 @@ describe('<Plugin Name> Storage', () => {
   })
 
   describe('#data', function () {
-    it('should process the data', (done) => {
+    it('should process the data', function (done) {
       this.timeout(10000)
 
       // TODO: send dummy data to reekoh 'INPUT_PIPE' queue to process 
@@ -74,9 +74,7 @@ describe('<Plugin Name> Storage', () => {
        *
        */
     })
-  })
 
-  describe('#command', function () {
     it('should have inserted the data', function (done) {
       this.timeout(10000)
 

@@ -17,7 +17,7 @@ let _app = null
 
 describe('<Plugin Name> Inventory Sync', () => {
   
-  before('init', function () => {
+  before('init', function () {
     // TODO: initialize all needed pre-test requirements i.e. process.env variables or connecting to some required services (e.g. rabbitmq)
 
     /**
